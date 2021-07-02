@@ -1,16 +1,14 @@
-# gh-home [![Build Status](https://travis-ci.org/sindresorhus/gh-home.svg?branch=master)](https://travis-ci.org/sindresorhus/gh-home)
+# gh-home
 
 > Open the GitHub page of the given or current directory repo
 
 It will attempt to open the upstream repo if there is one or the forked repo.
-
 
 ## Install
 
 ```
 $ npm install --global gh-home
 ```
-
 
 ## Usage
 
@@ -26,17 +24,17 @@ $ gh-home --help
     $ gh-home avajs/ava
 ```
 
-
-## Tip
+## Tips
 
 Add `alias gh=gh-home` to your `.zshrc`/`.bashrc`, so that you can run it with `$ gh` instead.
 
+You can also use the official [GitHub CLI](https://github.com/cli/cli) instead:
+
+```
+$ gh alias set home "repo view --web"
+$ gh home
+```
 
 ## Related
 
 - [npm-home](https://github.com/sindresorhus/npm-home) - Open the npm page of a package
-
-
-## License
-
-MIT © [Sindre Sorhus](https://sindresorhus.com)
